@@ -5,6 +5,7 @@ namespace bossit\logger;
 use Longman\TelegramBot\Request;
 use Longman\TelegramBot\Telegram;
 use yii\base\Component;
+use yii\helpers\Html;
 
 class TelegramService extends Component implements TelegramServiceInterface
 {
@@ -35,12 +36,17 @@ class TelegramService extends Component implements TelegramServiceInterface
 
     /**
      * @param string $message
+     * @param string $title
      *
      * @return bool
      * @throws \Longman\TelegramBot\Exception\TelegramException
      */
-    public function push(string $message) : bool
+    public function push(string $message, string $title = '') : bool
     {
+        if (!empty($title)) {
+            $message = Html::tag('b', $title) . "\n{$message}";
+        }
+
         $result = Request::sendMessage([
             'chat_id'    => $this->channelId,
             'text'       => $message,
