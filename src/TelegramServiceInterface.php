@@ -10,14 +10,9 @@ namespace bossit\logger;
 interface TelegramServiceInterface
 {
     /**
-     * @return mixed
-     */
-    public function init();
-
-    /**
-     * @param TelegramNotificationInterface $event
+     * @param string $message
      *
-     * @return mixed
+     * @return bool
      */
-    public function push(TelegramNotificationInterface $event);
+    public function push(string $message) : bool;
 }
