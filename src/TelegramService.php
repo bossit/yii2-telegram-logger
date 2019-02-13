@@ -6,8 +6,8 @@ use yii\base\Component;
 
 class TelegramService extends Component
 {
-    public static function push(string $message) : string
+    public function push(string $message) : string
     {
-        return $message;
+        return sprintf('We send: %s', $message);
     }
 }
