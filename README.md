@@ -2,6 +2,9 @@
 
 Push the message in Telegram channel.
 
+[![Latest Stable Version](https://poser.pugx.org/bossit/yii2-telegram-logger/v/stable)](https://packagist.org/packages/bossit/yii2-telegram-logger)
+[![Total Downloads](https://poser.pugx.org/bossit/yii2-telegram-logger/downloads)](https://packagist.org/packages/bossit/yii2-telegram-logger)
+
 ## Install
 
 The preferred way to install this component is through [composer](https://getcomposer.org/download/).
