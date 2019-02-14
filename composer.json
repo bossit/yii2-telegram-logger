@@ -1,6 +1,10 @@
 {
   "name": "bossit/yii2-telegram-logger",
   "description": "Push the message in Telegram",
+  "keywords": [
+    "yii2",
+    "telegram"
+  ],
   "require": {
     "php": "^7.0",
     "yiisoft/yii2": "~2.0.0",
