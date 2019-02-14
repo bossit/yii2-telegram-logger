@@ -10,6 +10,12 @@
     "yiisoft/yii2": "~2.0.0",
     "longman/telegram-bot": "^0.53.0"
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "bossit\\logger\\": "src"
