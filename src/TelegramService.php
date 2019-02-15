@@ -35,6 +35,18 @@ class TelegramService extends Component implements TelegramServiceInterface
     }
 
     /**
+     * @param string $channelId
+     *
+     * @return TelegramService
+     */
+    public function setChannel(string $channelId) : self
+    {
+        $this->channelId = $channelId;
+
+        return $this;
+    }
+
+    /**
      * @param string $message
      * @param string $title
      *
