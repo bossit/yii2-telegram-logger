@@ -3,6 +3,7 @@
 Push the message in Telegram channel.
 
 [![Latest Stable Version](https://poser.pugx.org/bossit/yii2-telegram-logger/v/stable)](https://packagist.org/packages/bossit/yii2-telegram-logger)
+[![Build Status](https://travis-ci.org/bossit/yii2-telegram-logger.svg?branch=master)](https://travis-ci.org/bossit/yii2-telegram-logger)
 [![Total Downloads](https://poser.pugx.org/bossit/yii2-telegram-logger/downloads)](https://packagist.org/packages/bossit/yii2-telegram-logger)
 
 ## Install
