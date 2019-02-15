@@ -1,11 +1,21 @@
 {
   "name": "bossit/yii2-telegram-logger",
   "description": "Push the message in Telegram",
+  "keywords": [
+    "yii2",
+    "telegram"
+  ],
   "require": {
     "php": "^7.0",
     "yiisoft/yii2": "~2.0.0",
     "longman/telegram-bot": "^0.53.0"
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "bossit\\logger\\": "src"
