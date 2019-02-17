@@ -23,6 +23,13 @@ interface TelegramServiceInterface
     public function setChannel(string $channelId) : TelegramService;
 
     /**
+     * @param string $parseMode
+     *
+     * @return TelegramService
+     */
+    public function setParseMode(string $parseMode) : TelegramService;
+
+    /**
      * @param string $message
      *
      * @return bool
