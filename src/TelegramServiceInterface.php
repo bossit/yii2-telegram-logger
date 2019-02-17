@@ -9,6 +9,12 @@ namespace bossit\logger;
  */
 interface TelegramServiceInterface
 {
+    /** @var string */
+    public const PARSE_MODE_HTML = 'html';
+
+    /** @var string */
+    public const PARSE_MODE_MARKDOWN = 'markdown';
+
     /**
      * @param string $channelId
      *
