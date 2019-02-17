@@ -19,7 +19,7 @@ class TelegramService extends Component implements TelegramServiceInterface
     public $botKey;
 
     /** @var string */
-    protected $parseMode = 'html';
+    protected $parseMode = TelegramService::PARSE_MODE_HTML;
 
     /** @var Telegram */
     protected $telegram;
