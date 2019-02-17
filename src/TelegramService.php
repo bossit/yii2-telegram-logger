@@ -68,7 +68,9 @@ class TelegramService extends Component implements TelegramServiceInterface
     public function push(string $message, string $title = '') : bool
     {
         if (!empty($title)) {
-            $message = Html::tag('b', $title) . "\n{$message}";
+            $message = Html::tag('b', $title)
+                . PHP_EOL
+                . $message;
         }
 
         $result = Request::sendMessage([
