@@ -47,6 +47,18 @@ class TelegramService extends Component implements TelegramServiceInterface
     }
 
     /**
+     * @param string $parseMode
+     *
+     * @return TelegramService
+     */
+    public function setParseMode(string $parseMode) : TelegramService
+    {
+        $this->parseMode = $parseMode;
+
+        return $this;
+    }
+
+    /**
      * @param string $message
      * @param string $title
      *
