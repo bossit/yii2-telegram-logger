@@ -20,7 +20,7 @@ The preferred way is to setup the components into our Application's configuratio
 
 ```php
 'components' => [
-    'myLogger' => [
+    'telegramLogger' => [
         'class'     => \bossit\logger\TelegramService::class,
         'botKey'    => 'xxx:zzz',
         'botName'   => 'YouNameBot',
@@ -33,5 +33,5 @@ That's it, you are ready to use them as Yii2 components.
 
 Send a message to chanel:
 ```php
-\Yii::$app->myLogger->push('Hello, %username%!');
+\Yii::$app->telegramLogger->push('Hello, %username%!');
 ```
