@@ -19,7 +19,7 @@ class TelegramService extends Component implements TelegramServiceInterface
     public $botKey;
 
     /** @var string */
-    protected $parseMode = 'html';
+    protected $parseMode = TelegramService::PARSE_MODE_HTML;
 
     /** @var Telegram */
     protected $telegram;
@@ -47,6 +47,18 @@ class TelegramService extends Component implements TelegramServiceInterface
     }
 
     /**
+     * @param string $parseMode
+     *
+     * @return TelegramService
+     */
+    public function setParseMode(string $parseMode) : TelegramService
+    {
+        $this->parseMode = $parseMode;
+
+        return $this;
+    }
+
+    /**
      * @param string $message
      * @param string $title
      *
@@ -56,7 +68,9 @@ class TelegramService extends Component implements TelegramServiceInterface
     public function push(string $message, string $title = '') : bool
     {
         if (!empty($title)) {
-            $message = Html::tag('b', $title) . "\n{$message}";
+            $message = Html::tag('b', $title)
+                . PHP_EOL
+                . $message;
         }
 
         $result = Request::sendMessage([
