@@ -31,7 +31,13 @@ The preferred way is to setup the components into our Application's configuratio
 
 That's it, you are ready to use them as Yii2 components.
 
-Send a message to chanel:
+##### Send a message to channel:
 ```php
 \Yii::$app->telegramLogger->push('Hello, %username%!');
+```
+
+##### Send a message with title to channel:
+
+```php
+\Yii::$app->telegramLogger->push('Hello, %username%!', 'Authorization');
 ```
